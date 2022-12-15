@@ -1,0 +1,7 @@
+# y, xstart, xend, rotation, color, label, va,  bed
+ .7,     .1,    .8,      15,      , VC1973A_v1, top, VC1973A_v1.bed
+ .5,     .1,    .8,       0,      , Vrad_JL7, top, Vrad_JL7.bed
+ .3,     .1,    .8,     -15,      , VC1973A_v2, bottom, VC1973A_v2.bed
+# edges
+e, 0, 1, Vrad_JL7.VC1973A_v1.anchors.simple
+e, 1, 2, Vrad_JL7.VC1973A_v2.anchors.simple

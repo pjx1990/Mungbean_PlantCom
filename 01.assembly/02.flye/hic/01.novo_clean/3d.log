@@ -1,0 +1,579 @@
+/data/software/soft/3d-dna/run-asm-pipeline.sh -r 2 reference/genome.fa aligned/merged_nodups.txt
+version: 180922
+ -r|--rounds flag was triggered, will run 2 round(s) of misjoin correction.
+###############
+Starting iterating scaffolding with editing:
+...starting round 0 of scaffolding:
+:) -p flag was triggered. Running LIGer with GNU Parallel support parameter set to true.
+:) -s flag was triggered, starting calculations with 15000 threshold starting contig/scaffold size
+:) -q flag was triggered, starting calculations with 1 threshold mapping quality
+...Using cprops file: genome.0.cprops
+...Using merged_nodups file: genome.mnd.0.txt
+...Scaffolding all scaffolds and contigs greater or equal to 15000 bp.
+...Starting iteration # 1
+...Starting iteration # 2
+...Starting iteration # 3
+...Starting iteration # 4
+...Starting iteration # 5
+...Starting iteration # 6
+...Starting iteration # 7
+...Starting iteration # 8
+...Starting iteration # 9
+...Starting iteration # 10
+...Starting iteration # 11
+...Starting iteration # 12
+...Starting iteration # 13
+...Starting iteration # 14
+...Starting iteration # 15
+...Starting iteration # 16
+...Starting iteration # 17
+...Starting iteration # 18
+...Starting iteration # 19
+...Starting iteration # 20
+...Starting iteration # 21
+...Starting iteration # 22
+...Starting iteration # 23
+...Starting iteration # 24
+...Starting iteration # 25
+...Starting iteration # 26
+...Starting iteration # 27
+...Starting iteration # 28
+...Starting iteration # 29
+...Starting iteration # 30
+...Starting iteration # 31
+...Starting iteration # 32
+...Starting iteration # 33
+...Starting iteration # 34
+...Starting iteration # 35
+...Starting iteration # 36
+...Starting iteration # 37
+...Starting iteration # 38
+:) DONE!
+...visualizing round 0 results:
+:) -p flag was triggered. Running with GNU Parallel support parameter set to true.
+:) -q flag was triggered, starting calculations for 1 threshold mapping quality
+:) -i flag was triggered, building mapq without
+:) -c flag was triggered, will remove temporary files after completion
+...Remapping contact data from the original contig set to assembly
+...Building track files
+...Building the hic file
+Mar 25, 2021 3:14:18 PM java.util.prefs.FileSystemPreferences$1 run
+INFO: Created user preferences directory.
+Not including fragment map
+Start preprocess
+Writing header
+Writing body
+..
+Writing footer
+
+Finished preprocess
+HiC file version: 8
+
+Calculating norms for zoom BP_2500000
+Calculating norms for zoom BP_1000000
+Calculating norms for zoom BP_500000
+Calculating norms for zoom BP_250000
+Calculating norms for zoom BP_100000
+Calculating norms for zoom BP_50000
+Calculating norms for zoom BP_25000
+Calculating norms for zoom BP_10000
+Calculating norms for zoom BP_5000
+Calculating norms for zoom BP_1000
+Writing expected
+Writing norms
+Finished writing norms
+...detecting misjoins in round 0 assembly:
+:) -p flag was triggered. Running with GNU Parallel support parameter set to true.
+:) -c flag was triggered, starting calculations with 5% saturation level
+:) -w flag was triggered, performing cursory search for mismatches at 25000 resolution
+:) -d flag was triggered, depletion score will be averaged across a region bounded by 125000 superdiagonal
+:) -k flag was triggered, starting calculations with 55% depletion as mismatch threshold
+:) -n flag was triggered, performing mismatch region thinning at 1000 resolution
+...Dumping 25000 resolution matrix
+HiC file version: 8
+...Estimating necessary saturation level for requested misassembly sensitivity
+...Coarse resolution saturation level = 5.3988
+...Analyzing near-diagonal mismatches
+...Filtering mismatch calls without better alternative: Not functional yet, skipping
+...Thinning mismatch region boundaries.
+...Dumping 1000 resolution matrix
+HiC file version: 8
+...Estimating necessary saturation level for requested misassembly sensitivity
+...Fine resolution saturation level = 2
+...Analyzing near-diagonal mismatches
+:) -w flag was triggered, performing cursory search for repeat at 25000 resolution
+:) -t flag was triggered, flagging regions with coverage higher than 2
+...Dumping 25000 resolution coverage track
+HiC file version: 8
+...-p flag was triggered. Running with GNU Parallel support parameter set to true.
+...-r flag was triggered, output will be labeled as *.1.*
+...applying edits to cprops file
+...applying edits to mnd file
+...starting round 1 of scaffolding:
+:) -p flag was triggered. Running LIGer with GNU Parallel support parameter set to true.
+:) -s flag was triggered, starting calculations with 15000 threshold starting contig/scaffold size
+:) -q flag was triggered, starting calculations with 1 threshold mapping quality
+...Using cprops file: genome.1.cprops
+...Using merged_nodups file: genome.mnd.1.txt
+...Scaffolding all scaffolds and contigs greater or equal to 15000 bp.
+...Starting iteration # 1
+...Starting iteration # 2
+...Starting iteration # 3
+...Starting iteration # 4
+...Starting iteration # 5
+...Starting iteration # 6
+...Starting iteration # 7
+...Starting iteration # 8
+...Starting iteration # 9
+...Starting iteration # 10
+...Starting iteration # 11
+...Starting iteration # 12
+...Starting iteration # 13
+...Starting iteration # 14
+...Starting iteration # 15
+...Starting iteration # 16
+...Starting iteration # 17
+...Starting iteration # 18
+...Starting iteration # 19
+...Starting iteration # 20
+:) DONE!
+...visualizing round 1 results:
+:) -p flag was triggered. Running with GNU Parallel support parameter set to true.
+:) -q flag was triggered, starting calculations for 1 threshold mapping quality
+:) -i flag was triggered, building mapq without
+:) -c flag was triggered, will remove temporary files after completion
+...Remapping contact data from the original contig set to assembly
+...Building track files
+...Building the hic file
+Not including fragment map
+Start preprocess
+Writing header
+Writing body
+..
+Writing footer
+
+Finished preprocess
+HiC file version: 8
+
+Calculating norms for zoom BP_2500000
+Calculating norms for zoom BP_1000000
+Calculating norms for zoom BP_500000
+Calculating norms for zoom BP_250000
+Calculating norms for zoom BP_100000
+Calculating norms for zoom BP_50000
+Calculating norms for zoom BP_25000
+Calculating norms for zoom BP_10000
+Calculating norms for zoom BP_5000
+Calculating norms for zoom BP_1000
+Writing expected
+Writing norms
+Finished writing norms
+...detecting misjoins in round 1 assembly:
+:) -p flag was triggered. Running with GNU Parallel support parameter set to true.
+:) -c flag was triggered, starting calculations with 5% saturation level
+:) -w flag was triggered, performing cursory search for mismatches at 25000 resolution
+:) -d flag was triggered, depletion score will be averaged across a region bounded by 125000 superdiagonal
+:) -k flag was triggered, starting calculations with 55% depletion as mismatch threshold
+:) -n flag was triggered, performing mismatch region thinning at 1000 resolution
+...Dumping 25000 resolution matrix
+HiC file version: 8
+...Estimating necessary saturation level for requested misassembly sensitivity
+...Coarse resolution saturation level = 5.38827
+...Analyzing near-diagonal mismatches
+...Filtering mismatch calls without better alternative: Not functional yet, skipping
+...Thinning mismatch region boundaries.
+...Dumping 1000 resolution matrix
+HiC file version: 8
+...Estimating necessary saturation level for requested misassembly sensitivity
+...Fine resolution saturation level = 2
+...Analyzing near-diagonal mismatches
+:) -w flag was triggered, performing cursory search for repeat at 25000 resolution
+:) -t flag was triggered, flagging regions with coverage higher than 2
+...Dumping 25000 resolution coverage track
+HiC file version: 8
+...-p flag was triggered. Running with GNU Parallel support parameter set to true.
+...-r flag was triggered, output will be labeled as *.2.*
+...applying edits to cprops file
+...applying edits to mnd file
+...starting round 2 of scaffolding:
+:) -p flag was triggered. Running LIGer with GNU Parallel support parameter set to true.
+:) -s flag was triggered, starting calculations with 15000 threshold starting contig/scaffold size
+:) -q flag was triggered, starting calculations with 1 threshold mapping quality
+...Using cprops file: genome.2.cprops
+...Using merged_nodups file: genome.mnd.2.txt
+...Scaffolding all scaffolds and contigs greater or equal to 15000 bp.
+...Starting iteration # 1
+...Starting iteration # 2
+...Starting iteration # 3
+...Starting iteration # 4
+...Starting iteration # 5
+...Starting iteration # 6
+...Starting iteration # 7
+...Starting iteration # 8
+...Starting iteration # 9
+...Starting iteration # 10
+...Starting iteration # 11
+...Starting iteration # 12
+...Starting iteration # 13
+...Starting iteration # 14
+...Starting iteration # 15
+...Starting iteration # 16
+...Starting iteration # 17
+...Starting iteration # 18
+...Starting iteration # 19
+...Starting iteration # 20
+...Starting iteration # 21
+:) DONE!
+...visualizing round 2 results:
+:) -p flag was triggered. Running with GNU Parallel support parameter set to true.
+:) -q flag was triggered, starting calculations for 1 threshold mapping quality
+:) -i flag was triggered, building mapq without
+:) -c flag was triggered, will remove temporary files after completion
+...Remapping contact data from the original contig set to assembly
+...Building track files
+...Building the hic file
+Not including fragment map
+Start preprocess
+Writing header
+Writing body
+..
+Writing footer
+
+Finished preprocess
+HiC file version: 8
+
+Calculating norms for zoom BP_2500000
+Calculating norms for zoom BP_1000000
+Calculating norms for zoom BP_500000
+Calculating norms for zoom BP_250000
+Calculating norms for zoom BP_100000
+Calculating norms for zoom BP_50000
+Calculating norms for zoom BP_25000
+Calculating norms for zoom BP_10000
+Calculating norms for zoom BP_5000
+Calculating norms for zoom BP_1000
+Writing expected
+Writing norms
+Finished writing norms
+###############
+Starting polish:
+:) -p flag was triggered. Running with GNU Parallel support parameter set to true.
+:) -q flag was triggered, performing polishing taking into account signal with minimum 1 mapping quality
+...-j flag was triggered, will use Juicebox map genome.resolved.hic
+...-a flag was triggered, will use scaffold annotation file genome.resolved_asm.scaffold_track.txt
+...-b flag was triggered, will use superscaffold annotation file genome.resolved_asm.superscaf_track.txt
+...-s flag was triggered, will ignore all scaffolds shorter than 1000000 for polishing
+:) -c flag was triggered, starting calculations with 5% saturation level
+:) -w flag was triggered, performing cursory search for mismatches at 100000 resolution
+:) -d flag was triggered, depletion score will be averaged across a region bounded by 3000000 superdiagonal
+:) -k flag was triggered, starting calculations with 55% depletion as mismatch threshold
+:) -n flag was triggered, performing mismatch region thinning at 1000 resolution
+:) -p flag was triggered. Running with GNU Parallel support parameter set to true.
+:) -c flag was triggered, starting calculations with 5% saturation level
+:) -w flag was triggered, performing cursory search for mismatches at 100000 resolution
+:) -k flag was triggered, starting calculations with 55% depletion as mismatch threshold
+:) -d flag was triggered, depletion score will be averaged across a region bounded by 3000000 superdiagonal
+:) -n flag was triggered, performing mismatch region thinning at 1000 resolution
+...Dumping 100000 resolution matrix
+HiC file version: 8
+...Estimating necessary saturation level for requested misassembly sensitivity
+...Coarse resolution saturation level = 21.2757
+...Analyzing near-diagonal mismatches
+...Filtering mismatch calls without better alternative: Not functional yet, skipping
+...Thinning mismatch region boundaries.
+...Dumping 1000 resolution matrix
+HiC file version: 8
+...Estimating necessary saturation level for requested misassembly sensitivity
+...Fine resolution saturation level = 2
+...Analyzing near-diagonal mismatches
+...-p flag was triggered. Running with GNU Parallel support parameter set to true.
+...-r flag was triggered, output will be labeled as *.polish.*
+...applying edits to cprops file
+...applying edits to mnd file
+:) -p flag was triggered. Running LIGer with GNU Parallel support parameter set to true.
+:) -q flag was triggered, starting calculations with 1 threshold mapping quality
+:) -s flag was triggered, starting calculations with 1000000 threshold starting contig/scaffold size
+...Using cprops file: genome.resolved.polish.cprops
+...Using merged_nodups file: genome.resolved.polish.mnd.txt
+...Explicit scaffold set has been listed as input. Using set as a first iteration.
+...Starting iteration # 1
+...Starting iteration # 2
+...Starting iteration # 3
+...Starting iteration # 4
+...Starting iteration # 5
+...Starting iteration # 6
+...Starting iteration # 7
+:) DONE!
+:) -p flag was triggered. Running LIGer with GNU Parallel support parameter set to true.
+:) -q flag was triggered, starting calculations with 1 threshold mapping quality
+:) -s flag was triggered, starting calculations with 1000000 threshold starting contig/scaffold size
+...Using cprops file: genome.resolved.polish.cprops
+...Using merged_nodups file: genome.resolved.polish.mnd.txt
+...Explicit scaffold set has been listed as input. Using set as a first iteration.
+...Starting iteration # 1
+:) DONE!
+:) -p flag was triggered. Running with GNU Parallel support parameter set to true.
+:) -q flag was triggered, starting calculations for 1 threshold mapping quality
+:) -i flag was triggered, building mapq without
+:) -c flag was triggered, will remove temporary files after completion
+...Remapping contact data from the original contig set to assembly
+...Building track files
+...Building the hic file
+Not including fragment map
+Start preprocess
+Writing header
+Writing body
+..
+Writing footer
+
+Finished preprocess
+HiC file version: 8
+
+Calculating norms for zoom BP_2500000
+Calculating norms for zoom BP_1000000
+Calculating norms for zoom BP_500000
+Calculating norms for zoom BP_250000
+Calculating norms for zoom BP_100000
+Calculating norms for zoom BP_50000
+Calculating norms for zoom BP_25000
+Calculating norms for zoom BP_10000
+Calculating norms for zoom BP_5000
+Calculating norms for zoom BP_1000
+Writing expected
+Writing norms
+Finished writing norms
+###############
+Starting split:
+:) -p flag was triggered. Running with GNU Parallel support parameter set to true.
+...-q flag was triggered, will ignore all reads with mapping quality less then 1 for polishing
+...-j flag was triggered, will use Juicebox map genome.polished.hic
+...-a flag was triggered, will use scaffold annotation file genome.polished_asm.scaffold_track.txt
+...-b flag was triggered, will use superscaffold annotation file genome.polished_asm.superscaf_track.txt
+...-s flag was triggered, will ignore all scaffolds shorter than 100000 for polishing
+:) -c flag was triggered, starting calculations with 5% saturation level
+:) -w flag was triggered, performing cursory search for mismatches at 100000 resolution
+:) -d flag was triggered, depletion score will be averaged across a region bounded by 3000000 superdiagonal
+:) -k flag was triggered, starting calculations with 55% depletion as mismatch threshold
+:) -n flag was triggered, performing mismatch region thinning at 1000 resolution
+:) -p flag was triggered. Running with GNU Parallel support parameter set to true.
+:) -c flag was triggered, starting calculations with 5% saturation level
+:) -w flag was triggered, performing cursory search for mismatches at 100000 resolution
+:) -k flag was triggered, starting calculations with 55% depletion as mismatch threshold
+:) -d flag was triggered, depletion score will be averaged across a region bounded by 3000000 superdiagonal
+:) -n flag was triggered, performing mismatch region thinning at 1000 resolution
+...Dumping 100000 resolution matrix
+HiC file version: 8
+...Estimating necessary saturation level for requested misassembly sensitivity
+...Coarse resolution saturation level = 21.2844
+...Analyzing near-diagonal mismatches
+...Filtering mismatch calls without better alternative: Not functional yet, skipping
+...Thinning mismatch region boundaries.
+...Dumping 1000 resolution matrix
+HiC file version: 8
+...Estimating necessary saturation level for requested misassembly sensitivity
+...Fine resolution saturation level = 2
+...Analyzing near-diagonal mismatches
+...-p flag was triggered. Running with GNU Parallel support parameter set to true.
+...-r flag was triggered, output will be labeled as *.split.*
+...applying edits to cprops file
+...applying edits to mnd file
+:) -p flag was triggered. Running with GNU Parallel support parameter set to true.
+:) -q flag was triggered, starting calculations for 1 threshold mapping quality
+:) -i flag was triggered, building mapq without
+:) -c flag was triggered, will remove temporary files after completion
+...Remapping contact data from the original contig set to assembly
+...Building track files
+...Building the hic file
+Not including fragment map
+Start preprocess
+Writing header
+Writing body
+..
+Writing footer
+
+Finished preprocess
+HiC file version: 8
+
+Calculating norms for zoom BP_2500000
+Calculating norms for zoom BP_1000000
+Calculating norms for zoom BP_500000
+Calculating norms for zoom BP_250000
+Calculating norms for zoom BP_100000
+Calculating norms for zoom BP_50000
+Calculating norms for zoom BP_25000
+Calculating norms for zoom BP_10000
+Calculating norms for zoom BP_5000
+Calculating norms for zoom BP_1000
+Writing expected
+Writing norms
+Finished writing norms
+###############
+Starting sealing:
+... -i flag was triggered, will attempt to place back only debris contigs/scaffolds and those less than 15000
+:| Warning: no explicit bundle size was listed. Will use the same one as listed for false positive size threshold: this is the most typical scenario.
+:| Warning: No input for label1 was provided. Default for label1 is ":::fragment_"
+:| Warning: No input for label2 was provided. Default for label2 is ":::debris"
+:| Warning: No input for label1 was provided. Default for label1 is ":::fragment_"
+:| Warning: No input for label2 was provided. Default for label2 is ":::debris"
+:| Warning: No input for label1 was provided. Default for label1 is ":::fragment_"
+:| Warning: No input for label2 was provided. Default for label2 is ":::debris"
+:| Warning: No input for label1 was provided. Default for label1 is ":::fragment_"
+:| Warning: No input for label2 was provided. Default for label2 is ":::debris"
+:| Warning: No input for label1 was provided. Default for label1 is ":::fragment_"
+:| Warning: No input for label2 was provided. Default for label2 is ":::debris"
+:| Warning: No input for label1 was provided. Default for label1 is ":::fragment_"
+:| Warning: No input for label2 was provided. Default for label2 is ":::debris"
+:| Warning: No input for label1 was provided. Default for label1 is ":::fragment_"
+:| Warning: No input for label2 was provided. Default for label2 is ":::debris"
+:| Warning: No input for label1 was provided. Default for label1 is ":::fragment_"
+:| Warning: No input for label2 was provided. Default for label2 is ":::debris"
+:| Warning: No input for label1 was provided. Default for label1 is ":::fragment_"
+:| Warning: No input for label2 was provided. Default for label2 is ":::debris"
+:| Warning: No input for label1 was provided. Default for label1 is ":::fragment_"
+:| Warning: No input for label2 was provided. Default for label2 is ":::debris"
+:| Warning: No input for label1 was provided. Default for label1 is ":::fragment_"
+:| Warning: No input for label2 was provided. Default for label2 is ":::debris"
+:| Warning: No input for label1 was provided. Default for label1 is ":::fragment_"
+:| Warning: No input for label2 was provided. Default for label2 is ":::debris"
+:| Warning: No input for label1 was provided. Default for label1 is ":::fragment_"
+:| Warning: No input for label2 was provided. Default for label2 is ":::debris"
+:| Warning: No input for label1 was provided. Default for label1 is ":::fragment_"
+:| Warning: No input for label2 was provided. Default for label2 is ":::debris"
+:| Warning: No input for label1 was provided. Default for label1 is ":::fragment_"
+:| Warning: No input for label2 was provided. Default for label2 is ":::debris"
+:| Warning: No input for label1 was provided. Default for label1 is ":::fragment_"
+:| Warning: No input for label2 was provided. Default for label2 is ":::debris"
+:| Warning: No input for label1 was provided. Default for label1 is ":::fragment_"
+:| Warning: No input for label2 was provided. Default for label2 is ":::debris"
+:| Warning: No input for label1 was provided. Default for label1 is ":::fragment_"
+:| Warning: No input for label2 was provided. Default for label2 is ":::debris"
+:| Warning: No input for label1 was provided. Default for label1 is ":::fragment_"
+:| Warning: No input for label2 was provided. Default for label2 is ":::debris"
+:| Warning: No input for label1 was provided. Default for label1 is ":::fragment_"
+:| Warning: No input for label2 was provided. Default for label2 is ":::debris"
+:| Warning: No input for label1 was provided. Default for label1 is ":::fragment_"
+:| Warning: No input for label2 was provided. Default for label2 is ":::debris"
+:| Warning: No input for label1 was provided. Default for label1 is ":::fragment_"
+:| Warning: No input for label2 was provided. Default for label2 is ":::debris"
+:| Warning: No input for label1 was provided. Default for label1 is ":::fragment_"
+:| Warning: No input for label2 was provided. Default for label2 is ":::debris"
+:| Warning: No input for label1 was provided. Default for label1 is ":::fragment_"
+:| Warning: No input for label2 was provided. Default for label2 is ":::debris"
+:| Warning: No input for label1 was provided. Default for label1 is ":::fragment_"
+:| Warning: No input for label2 was provided. Default for label2 is ":::debris"
+:| Warning: No input for label1 was provided. Default for label1 is ":::fragment_"
+:| Warning: No input for label2 was provided. Default for label2 is ":::debris"
+:| Warning: No input for label1 was provided. Default for label1 is ":::fragment_"
+:| Warning: No input for label2 was provided. Default for label2 is ":::debris"
+:| Warning: No input for label1 was provided. Default for label1 is ":::fragment_"
+:| Warning: No input for label2 was provided. Default for label2 is ":::debris"
+:| Warning: No input for label1 was provided. Default for label1 is ":::fragment_"
+:| Warning: No input for label2 was provided. Default for label2 is ":::debris"
+:| Warning: No input for label1 was provided. Default for label1 is ":::fragment_"
+:| Warning: No input for label2 was provided. Default for label2 is ":::debris"
+:| Warning: No input for label1 was provided. Default for label1 is ":::fragment_"
+:| Warning: No input for label2 was provided. Default for label2 is ":::debris"
+:| Warning: No input for label1 was provided. Default for label1 is ":::fragment_"
+:| Warning: No input for label2 was provided. Default for label2 is ":::debris"
+:| Warning: No input for label1 was provided. Default for label1 is ":::fragment_"
+:| Warning: No input for label2 was provided. Default for label2 is ":::debris"
+:| Warning: No input for label1 was provided. Default for label1 is ":::fragment_"
+:| Warning: No input for label2 was provided. Default for label2 is ":::debris"
+:| Warning: No input for label1 was provided. Default for label1 is ":::fragment_"
+:| Warning: No input for label2 was provided. Default for label2 is ":::debris"
+:| Warning: No input for label1 was provided. Default for label1 is ":::fragment_"
+:| Warning: No input for label2 was provided. Default for label2 is ":::debris"
+:| Warning: No input for label1 was provided. Default for label1 is ":::fragment_"
+:| Warning: No input for label2 was provided. Default for label2 is ":::debris"
+:| Warning: No input for label1 was provided. Default for label1 is ":::fragment_"
+:| Warning: No input for label2 was provided. Default for label2 is ":::debris"
+:| Warning: No input for label1 was provided. Default for label1 is ":::fragment_"
+:| Warning: No input for label2 was provided. Default for label2 is ":::debris"
+:| Warning: No input for label1 was provided. Default for label1 is ":::fragment_"
+:| Warning: No input for label2 was provided. Default for label2 is ":::debris"
+:| Warning: No input for label1 was provided. Default for label1 is ":::fragment_"
+:| Warning: No input for label2 was provided. Default for label2 is ":::debris"
+:| Warning: No input for label1 was provided. Default for label1 is ":::fragment_"
+:| Warning: No input for label2 was provided. Default for label2 is ":::debris"
+:| Warning: No input for label1 was provided. Default for label1 is ":::fragment_"
+:| Warning: No input for label2 was provided. Default for label2 is ":::debris"
+:| Warning: No input for label1 was provided. Default for label1 is ":::fragment_"
+:| Warning: No input for label2 was provided. Default for label2 is ":::debris"
+:| Warning: No input for label1 was provided. Default for label1 is ":::fragment_"
+:| Warning: No input for label2 was provided. Default for label2 is ":::debris"
+:| Warning: No input for label1 was provided. Default for label1 is ":::fragment_"
+:| Warning: No input for label2 was provided. Default for label2 is ":::debris"
+:| Warning: No input for label1 was provided. Default for label1 is ":::fragment_"
+:| Warning: No input for label2 was provided. Default for label2 is ":::debris"
+:| Warning: No input for label1 was provided. Default for label1 is ":::fragment_"
+:| Warning: No input for label2 was provided. Default for label2 is ":::debris"
+:| Warning: No input for label1 was provided. Default for label1 is ":::fragment_"
+:| Warning: No input for label2 was provided. Default for label2 is ":::debris"
+:| Warning: No input for label1 was provided. Default for label1 is ":::fragment_"
+:| Warning: No input for label2 was provided. Default for label2 is ":::debris"
+:| Warning: No input for label1 was provided. Default for label1 is ":::fragment_"
+:| Warning: No input for label2 was provided. Default for label2 is ":::debris"
+:| Warning: No input for label1 was provided. Default for label1 is ":::fragment_"
+:| Warning: No input for label2 was provided. Default for label2 is ":::debris"
+:| Warning: No input for label1 was provided. Default for label1 is ":::fragment_"
+:| Warning: No input for label2 was provided. Default for label2 is ":::debris"
+:| Warning: No input for label1 was provided. Default for label1 is ":::fragment_"
+:| Warning: No input for label2 was provided. Default for label2 is ":::debris"
+:| Warning: No input for label1 was provided. Default for label1 is ":::fragment_"
+:| Warning: No input for label2 was provided. Default for label2 is ":::debris"
+:| Warning: No input for label1 was provided. Default for label1 is ":::fragment_"
+:| Warning: No input for label2 was provided. Default for label2 is ":::debris"
+:| Warning: No input for label1 was provided. Default for label1 is ":::fragment_"
+:| Warning: No input for label2 was provided. Default for label2 is ":::debris"
+:| Warning: No input for label1 was provided. Default for label1 is ":::fragment_"
+:| Warning: No input for label2 was provided. Default for label2 is ":::debris"
+:| Warning: No input for label1 was provided. Default for label1 is ":::fragment_"
+:| Warning: No input for label2 was provided. Default for label2 is ":::debris"
+:| Warning: No input for label1 was provided. Default for label1 is ":::fragment_"
+:| Warning: No input for label2 was provided. Default for label2 is ":::debris"
+:| Warning: No input for label1 was provided. Default for label1 is ":::fragment_"
+:| Warning: No input for label2 was provided. Default for label2 is ":::debris"
+:| Warning: No input for label1 was provided. Default for label1 is ":::fragment_"
+:| Warning: No input for label2 was provided. Default for label2 is ":::debris"
+:| Warning: No input for label1 was provided. Default for label1 is ":::fragment_"
+:| Warning: No input for label2 was provided. Default for label2 is ":::debris"
+:) -p flag was triggered. Running with GNU Parallel support parameter set to true.
+:) -q flag was triggered, starting calculations for 1 threshold mapping quality
+:) -i flag was triggered, building mapq without
+:) -c flag was triggered, will remove temporary files after completion
+...Remapping contact data from the original contig set to assembly
+...Building track files
+...Building the hic file
+Not including fragment map
+Start preprocess
+Writing header
+Writing body
+..
+Writing footer
+
+Finished preprocess
+HiC file version: 8
+
+Calculating norms for zoom BP_2500000
+Calculating norms for zoom BP_1000000
+Calculating norms for zoom BP_500000
+Calculating norms for zoom BP_250000
+Calculating norms for zoom BP_100000
+Calculating norms for zoom BP_50000
+Calculating norms for zoom BP_25000
+Calculating norms for zoom BP_10000
+Calculating norms for zoom BP_5000
+Calculating norms for zoom BP_1000
+Writing expected
+Writing norms
+Finished writing norms
+:| Warning: No input for label1 was provided. Default for label1 is ":::fragment_"
+:| Warning: No input for label2 was provided. Default for label2 is ":::debris"
+###############
+Finilizing output:
+... -s flag was triggered, treating all contigs/scaffolds shorter than 15000 as unattempted.
+... -l flag was triggered. Output will appear with headers of the form genome_hic_scaffold_#.
+... -g flag was triggered, making gap size between scaffolded draft sequences to be equal to 500.
+Analyzing the merged assembly
+...trimming N overhangs
+...adding gaps

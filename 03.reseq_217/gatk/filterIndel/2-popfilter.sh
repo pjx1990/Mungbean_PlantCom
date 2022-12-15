@@ -1,0 +1,13 @@
+vcftools \
+	--minDP 4 \
+	--maxDP 100 \
+	--minGQ  10 \
+	--minQ 30 \
+	--min-meanDP 5 \
+	--min-alleles 2 \
+	--max-alleles 2 \
+	--out DP5miss09maf005.indels \
+	--gzvcf indels_hardfiltered.vcf.gz \
+	--recode --recode-INFO-all \
+	--max-missing 0.9 \
+	--maf 0.05

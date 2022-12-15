@@ -1,0 +1,3 @@
+minimap2 -c -x asm20 -B5 -O4,16 --no-long-join -r 85 -N 50 -s 300 -z 200 --mask-level 0.9 --min-occ 200 -g 2500 --score-N 2 --cs -t 6 ../../01.assembly/05.latest_ref/vigna_radiata.genome.asm20.mmi assembly/lz-101.no.fa > assembly/lz-101.fa.paf
+minimap2 -c -x asm20 -B5 -O4,16 --no-long-join -r 85 -N 50 -s 300 -z 200 --mask-level 0.9 --min-occ 200 -g 2500 --score-N 2 --cs -t 6 ../../01.assembly/05.latest_ref/vigna_radiata.genome.asm20.mmi assembly/lz-182.no.fa > assembly/lz-182.fa.paf
+minimap2 -c -x asm20 -B5 -O4,16 --no-long-join -r 85 -N 50 -s 300 -z 200 --mask-level 0.9 --min-occ 200 -g 2500 --score-N 2 --cs -t 6 ../../01.assembly/05.latest_ref/vigna_radiata.genome.asm20.mmi assembly/lz-43.no.fa > assembly/lz-43.fa.paf

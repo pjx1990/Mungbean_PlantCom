@@ -1,0 +1,34 @@
+Verifying PATHS...
+jellyfish OK
+runCA OK
+createSuperReadsForDirectory.perl OK
+creating script file for the actions...done.
+execute assemble.sh to run assembly
+[Sat Feb 27 05:44:02 CST 2021] Processing pe library reads
+[Sat Feb 27 05:48:29 CST 2021] Average PE read length 150
+[Sat Feb 27 05:48:29 CST 2021] Using kmer size of 99 for the graph
+[Sat Feb 27 05:48:29 CST 2021] MIN_Q_CHAR: 33
+[Sat Feb 27 05:48:30 CST 2021] Creating mer database for Quorum
+[Sat Feb 27 05:51:33 CST 2021] Error correct PE
+[Sat Feb 27 06:01:46 CST 2021] Estimating genome size
+[Sat Feb 27 06:05:14 CST 2021] Estimated genome size: 381459621
+[Sat Feb 27 06:05:14 CST 2021] Creating k-unitigs with k=99
+[Sat Feb 27 06:15:05 CST 2021] Computing super reads from PE 
+[Sat Feb 27 06:25:48 CST 2021] Using linking mates
+[Sat Feb 27 06:25:54 CST 2021] Celera Assembler
+[Sat Feb 27 07:16:46 CST 2021] Overlap/unitig success
+[Sat Feb 27 07:16:46 CST 2021] Recomputing A-stat for super-reads
+[Sat Feb 27 07:21:27 CST 2021] Filtering overlaps
+[Sat Feb 27 08:36:34 CST 2021] Recomputing A-stat for super-reads
+[Sat Feb 27 08:59:32 CST 2021] CA success
+[Sat Feb 27 08:59:32 CST 2021] Gap closing
+[Sat Feb 27 09:29:11 CST 2021] Gap close success
+[Sat Feb 27 09:29:11 CST 2021] Removing redundant scaffolds
+[Sat Feb 27 09:36:02 CST 2021] Assembly complete, final scaffold sequences are in CA/final.genome.scf.fasta
+[Sat Feb 27 09:36:02 CST 2021] All done
+[Sat Feb 27 09:36:02 CST 2021] Final stats for CA/final.genome.scf.fasta
+N50 3249
+Sequence 400924049
+Average 2143.62
+E-size 4197.79
+Count 187031

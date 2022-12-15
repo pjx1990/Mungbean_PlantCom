@@ -1,0 +1,12 @@
+data=read.delim("pca.eigenvec",sep=" ",header=F)
+#head(data[3:12]) #取top10 PC
+head(data[3:18])
+#x=data.frame(rep(1,nrow(data)),rep(1,nrow(data)),rep(0,nrow(data)),rep(0,nrow(data)))
+#x=data.frame(rep(1,nrow(data)),rep(0,nrow(data)),rep(0,nrow(data)))
+x=data.frame(rep(1,nrow(data)))
+#x=data.frame(rep(1,nrow(data)),rep(1,nrow(data)))
+head(x)
+#all=cbind(x,data[3:12])
+all=cbind(x,data[3:18])
+write.table(all,"c.txt",sep='\t',quote=F,col.names=F,row.names=F)
+#write.table(all,"c.txt",sep=' ',quote=F,col.names=F,row.names=F)

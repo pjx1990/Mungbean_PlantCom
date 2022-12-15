@@ -1,0 +1,13 @@
+vcftools \
+	--minDP 4 \
+	--maxDP 100 \
+	--minGQ  10 \
+	--minQ 30 \
+	--min-meanDP 3 \
+	--min-alleles 2 \
+	--max-alleles 2 \
+	--out snps_popfilter \
+	--gzvcf snps_hardfiltered.vcf.gz \
+	--recode --recode-INFO-all \
+	--max-missing 0.8 \
+	--maf 0.05

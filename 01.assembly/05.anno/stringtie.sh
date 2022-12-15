@@ -1,0 +1,9 @@
+/data/software/soft/stringtie-2.1.5/stringtie Mung_091DL-2-I.bam -l Mung_091DL-2-I -p 8 -o Mung_091DL-2-I.gtf
+/data/software/soft/stringtie-2.1.5/stringtie Mung_091DL-7-I.bam -l Mung_091DL-7-I -p 8 -o Mung_091DL-7-I.gtf
+/data/software/soft/stringtie-2.1.5/stringtie Mung_DL-3-I.bam -l Mung_DL-3-I -p 8 -o Mung_DL-3-I.gtf
+/data/software/soft/stringtie-2.1.5/stringtie JL7_1.bam -l JL7_1 -p 8 -o JL7_1.gtf
+/data/software/soft/stringtie-2.1.5/stringtie JL7_2.bam -l JL7_2 -p 8 -o JL7_2.gtf
+/data/software/soft/stringtie-2.1.5/stringtie JL7_3.bam -l JL7_3 -p 8 -o JL7_3.gtf
+/data/software/soft/stringtie-2.1.5/stringtie JL7_SE_1.bam -l JL7_SE_1 -p 8 -o JL7_SE_1.gtf
+/data/software/soft/stringtie-2.1.5/stringtie JL7_SE_2.bam -l JL7_SE_2 -p 8 -o JL7_SE_2.gtf
+/data/software/soft/stringtie-2.1.5/stringtie JL7_SE_3.bam -l JL7_SE_3 -p 8 -o JL7_SE_3.gtf
